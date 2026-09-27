@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ERP | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="app-shell">
+        <header class="sidebar">
+            <a class="brand" href="dashboard.html" aria-label="Student ERP home">
+                <span class="brand-mark">SE</span>
+                <span>
+                    <strong>Student ERP</strong>
+                    <small>Academic Suite</small>
+                </span>
+            </a>
+            <nav class="side-nav" aria-label="Student ERP sections">
+                <a class="active" href="dashboard.html">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="marks.html">Marks</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="announcements.html">Announcements</a>
+            </nav>
+            <button id="logoutButton" class="ghost-action">Logout</button>
+        </header>
+
+        <main class="content-area dashboard" data-page="dashboard">
+            <section class="welcome-panel">
+                <div>
+                    <p class="eyebrow">Academic Portal</p>
+                    <h1>Welcome back, <span id="dashboardName">Student</span></h1>
+                    <p>Your complete student record, designed for quick decisions and calm focus.</p>
+                </div>
+                <div class="session-badge">Student Login</div>
+            </section>
+
+            <section class="metrics-grid" aria-label="Academic summary">
+                <article class="metric-card">
+                    <span class="metric-label">Average Marks</span>
+                    <strong id="averageMarks">--</strong>
+                    <small>Across active subjects</small>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-label">Attendance</span>
+                    <strong id="averageAttendance">--</strong>
+                    <small>Overall percentage</small>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-label">Department</span>
+                    <strong id="studentDepartment">--</strong>
+                    <small id="studentYear">Current enrollment</small>
+                </article>
+            </section>
+
+            <nav class="dashboard-grid" aria-label="Student ERP sections">
+                <a class="nav-card" href="profile.html">
+                    <span class="card-icon profile-icon">P</span>
+                    <span class="card-title">Profile</span>
+                    <span class="card-text">Identity, department, email, and academic year.</span>
+                    <span class="card-link">Open</span>
+                </a>
+                <a class="nav-card" href="marks.html">
+                    <span class="card-icon marks-icon">M</span>
+                    <span class="card-title">Marks</span>
+                    <span class="card-text">Subject-wise performance with a quick average.</span>
+                    <span class="card-link">Open</span>
+                </a>
+                <a class="nav-card" href="attendance.html">
+                    <span class="card-icon attendance-icon">A</span>
+                    <span class="card-title">Attendance</span>
+                    <span class="card-text">Track attendance status for every subject.</span>
+                    <span class="card-link">Open</span>
+                </a>
+                <a class="nav-card" href="announcements.html">
+                    <span class="card-icon announcement-icon">N</span>
+                    <span class="card-title">Notices</span>
+                    <span class="card-text">Stay current with academic announcements.</span>
+                    <span class="card-link">Open</span>
+                </a>
+            </nav>
+        </main>
+    </aside>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

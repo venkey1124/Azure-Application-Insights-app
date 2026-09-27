@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ERP | Attendance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="app-shell">
+        <header class="sidebar">
+            <a class="brand" href="dashboard.html" aria-label="Student ERP home">
+                <span class="brand-mark">SE</span>
+                <span>
+                    <strong>Student ERP</strong>
+                    <small>Academic Suite</small>
+                </span>
+            </a>
+            <nav class="side-nav" aria-label="Student ERP sections">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="marks.html">Marks</a>
+                <a class="active" href="attendance.html">Attendance</a>
+                <a href="announcements.html">Announcements</a>
+            </nav>
+            <button id="logoutButton" class="ghost-action">Logout</button>
+        </header>
+
+        <main class="content-area dashboard">
+            <section class="page-heading">
+                <p class="eyebrow">Engagement record</p>
+                <h1>Attendance</h1>
+                <p>Monitor attendance health across enrolled subjects.</p>
+            </section>
+
+            <section id="attendance" class="panel">Loading attendance...</section>
+        </main>
+    </aside>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

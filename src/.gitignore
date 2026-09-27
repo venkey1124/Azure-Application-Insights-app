@@ -1,0 +1,21 @@
+# Maven build output
+target/
+
+# Application Insights agent and secrets
+agents/
+
+# Environment files
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
